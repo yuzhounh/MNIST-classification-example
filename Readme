@@ -1,5 +1,8 @@
-Classify MNIST by linear SVM. The classification accuracy (93.98%) is 
-terribly low compared to deep learning methods. However, it is a start. 
+Classify the MNIST data by linear SVM in Matlab. 
+Copyright (C) 2017 Jing Wang
+
+The classification accuracy (93.98%) is terribly low compared to deep 
+learning methods. However, it is a start. 
 https://www.tensorflow.org/get_started/mnist/beginners
 
 Download dataset and toolboxes:

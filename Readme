@@ -1,0 +1,14 @@
+Classify MNIST by linear SVM. The classification accuracy (93.98%) is 
+terribly low compared to deep learning methods. However, it is a start. 
+https://www.tensorflow.org/get_started/mnist/beginners
+
+Download dataset and toolboxes:
+MNIST data: http://yann.lecun.com/exdb/mnist/
+mnistHelper: http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset
+LIBSVM: https://github.com/cjlin1/libsvm
+C++ compiler: type "mex -setup c++" to see if it exists
+
+Usage:
+Run classify_MNIST.m
+
+2017-3-15 09:36:34

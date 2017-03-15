@@ -11,6 +11,13 @@ mnistHelper: http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset
 LIBSVM: https://github.com/cjlin1/libsvm
 C++ compiler: type "mex -setup c++" to see if it exists
 
+Software versions:
+Matlab R2015b, released on September 3, 2015
+C++ compiler, Microsoft Windows SDK 7.1 (C++) & Microsoft Visual C++ 2012
+LIBSVM 3.22, updated on 22 Dec 2016
+MNIST data, revised on 18 Nov 1996 & 26 Jan 1998      
+mnistHelper, updated on 28 Apr 2011
+
 Usage:
 Run classify_MNIST.m
 

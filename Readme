@@ -1,24 +1,41 @@
-Classify the MNIST data by linear SVM in Matlab. 
-Copyright (C) 2017 Jing Wang
+# MNIST Classification Example — MATLAB
 
-The classification accuracy (93.98%) is terribly low compared to deep 
-learning methods. However, it is a start. 
-https://www.tensorflow.org/get_started/mnist/beginners
+Classify handwritten MNIST digits with a linear SVM using LIBSVM's MATLAB interface.
 
-Download dataset and toolboxes:
-MNIST data: http://yann.lecun.com/exdb/mnist/
-mnistHelper: http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset
-LIBSVM: https://github.com/cjlin1/libsvm
-C++ compiler: type "mex -setup c++" to see if it exists
+[GPL-3.0 license](LICENSE)
 
-Software versions:
-Matlab R2015b, released on September 3, 2015
-C++ compiler, Microsoft Windows SDK 7.1 (C++) & Microsoft Visual C++ 2012
-LIBSVM 3.22, updated on 22 Dec 2016
-The MNIST data, revised on 18 Nov 1996 & 26 Jan 1998      
-MnistHelper, updated on 28 Apr 2011
+## Quick Start
 
-Usage:
-Run classify_MNIST.m
+1. Open the repository directory in MATLAB.
+2. Configure a supported C++ compiler and run the example:
 
-2017-3-15 09:36:34
+```matlab
+mex -setup c++
+classify_MNIST
+```
+
+The script decompresses the four included MNIST files, extracts `mnistHelper.zip` and `libsvm-master.zip`, builds LIBSVM's MEX interface, and trains and evaluates a linear SVM. Keep the input archives beside the script.
+
+## Historical Environment
+
+The original documentation records MATLAB R2015b, Microsoft Windows SDK 7.1 / Visual C++ 2012, LIBSVM 3.22, and mnistHelper dated 28 April 2011. It reports 93.98% test accuracy; this is the original result, not a newly reproduced benchmark.
+
+## Repository Structure
+
+- [classify_MNIST.m](classify_MNIST.m): preparation, training, and evaluation.
+- [mnistHelper.zip](mnistHelper.zip): MNIST image and label readers.
+- [libsvm-master.zip](libsvm-master.zip): LIBSVM sources.
+- `train-images-idx3-ubyte.gz` and `train-labels-idx1-ubyte.gz`: training inputs.
+- `t10k-images-idx3-ubyte.gz` and `t10k-labels-idx1-ubyte.gz`: test inputs.
+
+## Related Projects
+
+- [LIBSVM](https://github.com/cjlin1/libsvm): linear SVM implementation used by the example.
+- [Stanford MNIST helper documentation](http://ufldl.stanford.edu/wiki/index.php/Using_the_MNIST_Dataset): original source linked for the helper functions.
+
+## License
+
+See the existing [GNU General Public License, version 3](LICENSE). Retain the notices in the source files and in bundled third-party material.
+
+Copyright (C) 2017 Jing Wang.
+
